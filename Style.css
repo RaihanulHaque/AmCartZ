@@ -178,13 +178,13 @@ section .title::after{
     flex-flow : wrap;
 }
 #store .row .card {
-  width: 250px;
-  height: 300px;
+  width: 255px;
+  height: 315px;
   perspective: 500px;
   margin-top: 30px;
 }
 
-#store .row .card .content {
+#store .row .card #firstCard, #secondCard, #thirdCard {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -193,12 +193,12 @@ section .title::after{
   transform-style: preserve-3d;
 }
 
-#store .row .card:hover .content {
+/*#store .row .card:hover .content {
   transform: rotateY( 180deg ) ;
   transition: transform 0.5s;
-}
+}*/
 
-#store .row .content .front,.back {
+#store .row  .front,.back {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -206,33 +206,66 @@ section .title::after{
     border-radius: 10px;
     backface-visibility: hidden;
 }
-#store .row .card .content .front{
+#store .row .card .front{
     background-image: url("images/langra.jpeg ");
     background-size: contain;
-    background-position: center;
+    background-position: center 25px;
     background-repeat: no-repeat;
     
 }
-#store .row .card .content .front .name{
+#store .row .card  .front .name{
     text-align: center;
-    padding-top: 240px;
+    padding-top: 200px;
     font-size: 30px;
     font-weight: 450;
-    font-family: 'Hind Siliguri', sans-serif;
+    
 }
-#store .row .card .content .back {
+#store .row .card .front .bottom{
+    display:flex;
+    margin-top: 0px;
+    
+}
+#store .row .card .front .bottom .details{
+    color: #fff;
+    background-color: #A0A7F3;
+    font-size: 19px;
+    letter-spacing: 1.4px;
+    border-radius:3px;
+    margin-left: 30px;
+    position: absolute;
+    bottom: 14px;
+    padding: 5px 7px;
+    font-weight: 700;
+    box-shadow: 2px 2px 25px -7px #4C4C4C;
+}
+#store .row .card .front .bottom .details:hover{
+    transition: 0.4s;
+    transform: scale(1.06);
+}
+#store .row .card .front .bottom .details a{
+    text-decoration: none;
+    color: #fff;
+}
+#store .row .card .front .bottom .cart{
+    font-size: 28px;
+    color: darkblue;
+    padding-left: 207px;
+    padding-top: 35px;
+    
+}
+#store .row .card .back {
   background: #FAFAFA;
   color: white;
   transform: rotateY( 180deg );
 }
-#store .row .card .content .back .name{
+#store .row .card .back .name{
     color: #07042B;
     padding-top: 4px;
     text-align: center;
     font-size: 28px;
     font-weight: 450;
 }
-#store .row .card .content .back .price{
+#store .row .card .back .price{
     text-align: center;
     margin-top: 15px;
     padding-top: 20px;
@@ -240,24 +273,24 @@ section .title::after{
     color: #FF3F40;
     letter-spacing: 3px;
 }
-#store .row .card .content .back .price span{
+#store .row .card .back .price span{
     font-size: 35px;
 }
-#store .row .card .content .back .quantity{
+#store .row .card .back .quantity{
     display: flex;
     color:Black;
     justify-content: center;
     padding-top: 20px;
     font-size: 20px;
 }
-#store .row .card .content .back .cost{
+#store .row .card .back .cost{
     padding-top: 32px;
     display: flex;
     color:Black;
     justify-content: center;
     font-size: 20px;
 }
-#store .row .card .content .back input{
+#store .row .card .back input{
     background-color: #FAFAFA;
     margin-left: 8px;
     margin-right: 7px;
@@ -268,12 +301,23 @@ section .title::after{
     border: none;
     outline: none;
 }
+#store .row .card .back .bottom {
+    display: flex;
+    margin-top: 0px;
 
-#store .row .card .content .back .button{
+}
+#store .row .card .back .bottom .backward{
+    font-size: 28px;
+    color: darkblue;
+    position: absolute;
+    bottom: 14px;
+    margin-left: 20px;
+}
+#store .row .card .back .bottom .button{
     position: absolute;
     bottom: 10px;
-    left: 20%;
-    padding: 9px 8px;
+    left: 80px;
+    padding: 9px 7.5px;
     border: none;
     border-radius: 7px;
     font-size: 20px;
@@ -284,7 +328,7 @@ section .title::after{
     box-shadow: 2px 2px 25px -7px #4C4C4C;
     cursor: pointer;
 }
-#store .row .card .content .back .button:hover{
+#store .row .card .back .button:hover{
     transition: 0.4s;
     transform: scale(1.06);
 }
