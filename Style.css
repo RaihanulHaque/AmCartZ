@@ -30,7 +30,6 @@ body {
   background-attachment: fixed;
   overflow: hidden;
 }
-
 /*brand could be name or image*/
 .brand a{
     font-family: 'Architects Daughter', cursive;
@@ -160,13 +159,13 @@ section .title::after{
 }
 
 #store{
-    background-color: #EEE;
-    padding-top:40px;
+    background-color: #F8F4FB;
+    padding-top:46px;
     text-align: center;
 }
 #store .title::after {
     margin-bottom: 100px;
-    background-color: #EEE;
+    background-color: #F8F4FB;
     content: "What We Sell";
 }
 #store .row{
@@ -198,7 +197,7 @@ section .title::after{
   transition: transform 0.5s;
 }*/
 
-#store .row  .front,.back {
+#store .row .card .content .front,.back {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -206,26 +205,26 @@ section .title::after{
     border-radius: 10px;
     backface-visibility: hidden;
 }
-#store .row .card .front{
+#store .row .card .content .front{
     background-image: url("images/langra.jpeg ");
     background-size: contain;
     background-position: center 25px;
     background-repeat: no-repeat;
     
 }
-#store .row .card  .front .name{
+#store .row .card .content .front .name{
     text-align: center;
     padding-top: 200px;
     font-size: 30px;
     font-weight: 450;
     
 }
-#store .row .card .front .bottom{
+#store .row .card .content .front .bottom{
     display:flex;
     margin-top: 0px;
     
 }
-#store .row .card .front .bottom .details{
+#store .row .card .content .front .bottom .details{
     color: #fff;
     background-color: #A0A7F3;
     font-size: 19px;
@@ -238,34 +237,34 @@ section .title::after{
     font-weight: 700;
     box-shadow: 2px 2px 25px -7px #4C4C4C;
 }
-#store .row .card .front .bottom .details:hover{
+#store .row .card .content .front .bottom .details:hover{
     transition: 0.4s;
     transform: scale(1.06);
 }
-#store .row .card .front .bottom .details a{
+#store .row .card .content .front .bottom .details a{
     text-decoration: none;
     color: #fff;
 }
-#store .row .card .front .bottom .cart{
+#store .row .card .content .front .bottom .cart{
     font-size: 28px;
     color: darkblue;
     padding-left: 207px;
     padding-top: 35px;
     
 }
-#store .row .card .back {
+#store .row .card .content .back {
   background: #FAFAFA;
   color: white;
   transform: rotateY( 180deg );
 }
-#store .row .card .back .name{
+#store .row .card .content .back .name{
     color: #07042B;
     padding-top: 4px;
     text-align: center;
     font-size: 28px;
     font-weight: 450;
 }
-#store .row .card .back .price{
+#store .row .card .content .back .price{
     text-align: center;
     margin-top: 15px;
     padding-top: 20px;
@@ -273,24 +272,24 @@ section .title::after{
     color: #FF3F40;
     letter-spacing: 3px;
 }
-#store .row .card .back .price span{
+#store .row .card .content .back .price span{
     font-size: 35px;
 }
-#store .row .card .back .quantity{
+#store .row .card .content .back .quantity{
     display: flex;
     color:Black;
     justify-content: center;
     padding-top: 20px;
     font-size: 20px;
 }
-#store .row .card .back .cost{
+#store .row .card .content .back .cost{
     padding-top: 32px;
     display: flex;
     color:Black;
     justify-content: center;
     font-size: 20px;
 }
-#store .row .card .back input{
+#store .row .card .content .back input{
     background-color: #FAFAFA;
     margin-left: 8px;
     margin-right: 7px;
@@ -301,19 +300,19 @@ section .title::after{
     border: none;
     outline: none;
 }
-#store .row .card .back .bottom {
+#store .row .card .content .back .bottom {
     display: flex;
     margin-top: 0px;
 
 }
-#store .row .card .back .bottom .backward{
+#store .row .card .content .back .bottom .backward{
     font-size: 28px;
     color: darkblue;
     position: absolute;
     bottom: 14px;
     margin-left: 20px;
 }
-#store .row .card .back .bottom .button{
+#store .row .card .content .back .bottom .button{
     position: absolute;
     bottom: 10px;
     left: 80px;
@@ -328,18 +327,73 @@ section .title::after{
     box-shadow: 2px 2px 25px -7px #4C4C4C;
     cursor: pointer;
 }
-#store .row .card .back .button:hover{
+#store .row .card .content .back .button:hover{
     transition: 0.4s;
     transform: scale(1.06);
 }
 
-
-
-
-
-
-
-
+#footer{
+    background-color: #080C38;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+}
+#footer .title{
+    padding-top: 12px;
+}
+#footer .title::before{
+    display: none;
+}
+#footer .start{
+    margin-top: 10px;
+    display: flex;
+    flex-direction : row;
+    justify-content : space-evenly;
+    flex-flow : wrap;
+    align-items: center;
+}
+#footer .start .contact i{
+    font-size: 20px;
+    margin-right: 8px;
+}
+#footer .start .contact .phone, .address{
+    margin-top: 9px;
+    font-size: 17px;
+    font-weight: 400;
+}
+#footer .start .social ul{
+    display: flex;
+    
+}
+#footer .start .social ul li{
+    list-style: none;
+    width:90px;
+}
+#footer .start .social ul li a{
+    text-decoration: none;
+    color: white;
+}
+#footer .start .social ul li a i{
+    font-size: 24px;
+}
+#footer .end{
+    padding-top: 10px;
+    padding-bottom: 13px;
+    text-align: center;
+    font-weight: 350;
+}
+#footer .end .use{
+    
+}
+#footer .end .use a{
+    text-decoration: none;
+    color: white;
+    margin-left: 9px;
+}
+#footer .end .copy{
+    margin-top: 10px;
+    font-weight: 390;
+}
 
 
 
@@ -360,6 +414,9 @@ section .title::after{
   }
   .nav-list-container:active{
       
+  }
+  #footer .start .social ul{
+      padding-top: 15px;
   }
 }
 
@@ -390,6 +447,8 @@ section .title::after{
          display: none;
      }
      
-     
+     #footer .start .social ul {
+         
+     }
  }
  
