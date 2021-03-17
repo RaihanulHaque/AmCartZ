@@ -23,7 +23,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-image: url("images/intro-mango.jpg");
+  background-image: url("https://i.ibb.co/CbtWQgX/intro-mango.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -133,7 +133,7 @@ section .title::after{
     transform: translateX(-50%);
 }
 #intro{
-    background-image: url("images/intro-mango.jpg");
+    background-image: url("https://i.ibb.co/CbtWQgX/intro-mango.jpg");
     margin-top: -2px;
     height: 502px;
     width: 100%;
@@ -142,7 +142,7 @@ section .title::after{
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-}
+} 
 #intro .text{
     display: flex;
     flex-direction: column;
@@ -206,7 +206,7 @@ section .title::after{
     backface-visibility: hidden;
 }
 #store .row .card .content .front{
-    background-image: url("images/langra.jpeg ");
+    background-image: url("https://i.ibb.co/YpSVFb8/langra.jpg");
     background-size: contain;
     background-position: center 25px;
     background-repeat: no-repeat;
