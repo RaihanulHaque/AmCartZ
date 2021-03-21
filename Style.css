@@ -369,7 +369,6 @@ section .title::after{
 }
 #footer .start .social ul{
     display: flex;
-    
 }
 #footer .start .social ul li{
     list-style: none;
