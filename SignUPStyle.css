@@ -103,6 +103,7 @@
 #signupBackground .signup{
     background-color: #FFFFFF;
     text-align: center;
+    font-family:  'Noto Sans', sans-serif;
     height: 470px;
     width: 320px;
     padding: 50px 0;
