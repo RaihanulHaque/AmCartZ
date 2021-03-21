@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 
 *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 .navbar {
   width: 100%;
@@ -32,6 +33,7 @@
 
 .navbar .nav-list {
   padding: 3rem 0;
+  font-family: "Raleway", sans-serif;
   list-style-type: none;
   text-align: center;
   overflow: hidden;
